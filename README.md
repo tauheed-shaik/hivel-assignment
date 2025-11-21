@@ -33,6 +33,15 @@ The script prints two lines, one per test case:
 1. Secret reconstructed from `testcase1.json`.
 2. Secret reconstructed from `testcase2.json`.
 
+## Test Cases & Expected Output
+
+| Test case file   | Description                                                                                           | Expected secret |
+|------------------|-------------------------------------------------------------------------------------------------------|-----------------|
+| `testcase1.json` | Shamir setup with `n = 4`, `k = 3`. Points are provided in bases 2–10 and 4.                          | `3`             |
+| `testcase2.json` | Larger instance with `n = 10`, `k = 7`, mixing bases 3–16.                                            | `79836264049851`|
+
+Run `node index.js` and verify that the console output matches the two secrets above to ensure your changes are correct.
+
 ## How It Works
 
 1. **Decode values** – `baseDecode.js` converts each point value from its specified base into a `BigInt`.
