@@ -49,10 +49,4 @@ Run `node index.js` and verify that the console output matches the two secrets a
 3. **Lagrange interpolation** – Using `BigRational`, the algorithm evaluates the polynomial at `x = 0` to recover the constant term (the secret).
 4. **Validation** – The final result must be an integer; otherwise the program raises an error to avoid returning a fractional secret.
 
-## Testing
 
-There are no automated tests yet. To validate changes manually, run `node index.js` and ensure the printed secrets remain unchanged.
-
-## License
-
-ISC
